@@ -13,7 +13,7 @@ param(
     [string] $Tenant = "mpc46642",
     [string] $Cluster = "-2079377986",
     [ValidateSet("DT_CLUSTER", "DT_CLUSTER_ID")]
-    [string] $ClusterVariableName = "DT_CLUSTER",
+    [string] $ClusterVariableName = "DT_CLUSTER_ID",
     [string] $ConnectionBaseUrl = "https://mpc46642.live.dynatrace.com",
     [string] $Region = "us-east-1"
 )

@@ -13,6 +13,9 @@ HANDOFF.md
 # Leftover empty workspace from the initial setup location
 langGraph chatbot Lambda/
 
+# Separate local project
+handy/
+
 # Python
 __pycache__/
 *.py[cod]
