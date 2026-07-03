@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bedrock Guardrail Lambda Tester</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="toolbar" aria-label="Lambda selector">
+        <div>
+          <h1>Bedrock Guardrail Lambda Tester</h1>
+          <p>Compare explicit ApplyGuardrail calls with inline guardrail invocation.</p>
+        </div>
+        <div class="mode-toggle">
+          <button class="mode active" data-mode="apply">ApplyGuardrail</button>
+          <button class="mode" data-mode="inline">Inline Guardrail</button>
+        </div>
+      </section>
+
+      <section class="workspace">
+        <div class="conversation" id="conversation" aria-live="polite"></div>
+
+        <form class="composer" id="chat-form">
+          <textarea id="message" rows="4" placeholder="Type a test prompt..."></textarea>
+          <div class="composer-actions">
+            <div class="samples">
+              <button type="button" data-sample="safe">Safe</button>
+              <button type="button" data-sample="email">Email input</button>
+              <button type="button" data-sample="output">Output email</button>
+              <button type="button" data-sample="emailHate">Email + hate</button>
+            </div>
+            <button type="submit" id="send">Send</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="debug">
+        <div class="debug-header">
+          <h2>Raw Response</h2>
+          <button type="button" id="clear">Clear</button>
+        </div>
+        <pre id="raw">{}</pre>
+      </section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>

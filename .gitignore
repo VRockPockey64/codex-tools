@@ -1,0 +1,40 @@
+# Local secrets and credentials
+galaxybook_accessKeys.csv
+*.pem
+*.key
+*.env
+.env
+.env.*
+dynatrace-token.txt
+test-outputs/
+README.md
+HANDOFF.md
+
+# Leftover empty workspace from the initial setup location
+langGraph chatbot Lambda/
+
+# Python
+__pycache__/
+*.py[cod]
+.python-version
+.venv/
+venv/
+build/
+dist/
+*.egg-info/
+
+# Node
+node_modules/
+npm-debug.log*
+pnpm-lock.yaml
+
+# Lambda build artifacts
+*.zip
+.aws-sam/
+cdk.out/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
